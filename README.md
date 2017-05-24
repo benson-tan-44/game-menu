@@ -1,4 +1,4 @@
-# mercenary
+# Game Menu
 
 > This is a project that features a video-game menu
 
