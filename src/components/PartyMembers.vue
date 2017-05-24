@@ -60,7 +60,7 @@ textarea{
   overflow:hidden;
 padding:10px;
 width:100%;
-height:200px;
+height:150px;
 font-size:14px;
 display:block;
 border:1px solid #ccc;

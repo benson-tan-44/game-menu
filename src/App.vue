@@ -61,4 +61,22 @@ to{
   padding-top:10px;
 }
 
+body{
+  font-family: 'Ubuntu', sans-serif;
+background:#f6f6f7;
+}
+
+.panel-title {
+font-size:20px;
+}
+
+.panel-body{
+  font-size:16px;
+}
+
+.btn{
+  font-family: 'Dosis', sans-serif;
+  text-transform:uppercase;
+}
+
 </style>
