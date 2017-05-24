@@ -82,4 +82,9 @@ export default {
 .textpad{
   padding-top:10px;
 }
+
+.panel{
+  height:200px;
+}
+
 </style>

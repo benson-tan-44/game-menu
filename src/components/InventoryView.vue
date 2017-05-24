@@ -19,3 +19,9 @@ export default {
 }
 
 </script>
+
+<style scoped>
+.panel{
+  height:200px;
+}
+</style>
