@@ -39,7 +39,12 @@ export default {
 
       if(quantity * this.item.price > this.funds) {
         alert('Not enough money!');
-      } else {
+      } else if(quantity == 0) {
+        alert("You can't buy 0 items");
+      } else if(isNaN(quantity)) {
+        alert("Invalid. Please enter a number.");
+      }
+      else {
 
         if(Number.isInteger(quantity))
         {
@@ -60,7 +65,9 @@ export default {
       if(quantity > this.item.stock) {
         alert("You can't oversell your stock...");
       } else if(quantity == 0 ) {
-        alert("You cannot sell 0 items...")
+        alert("You can't sell 0 items.");
+      } else if(isNaN(quantity)) {
+        alert("Invalid. Please enter a number.");
       }
       else {
 
