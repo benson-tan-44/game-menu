@@ -11,7 +11,7 @@
         <router-link to="/store" activeClass="active" tag="li"><a>Store</a></router-link>
         <router-link to="/party" activeClass="active" tag="li"><a>Party</a></router-link>
       </ul>
-        <strong class="navbar-text navbar-right">Funds: {{funds}} </strong>
+        <strong class="navbar-text navbar-right">Funds: <span class="funds">{{funds}}</span> </strong>
       <ul class="nav navbar-nav navbar-right">
       <li :class="{open: isDropdownOpen}" class="dropdown">
         <a
@@ -69,3 +69,10 @@ export default {
 }
 
 </script>
+
+<style scoped>
+.funds{
+  color:green;
+}
+
+</style>

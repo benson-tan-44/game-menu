@@ -9,8 +9,8 @@
       <div class="panel-body">
         {{item.desc}}
         <div class="textpad">
-        <button :disabled="noFunds" @click="buyItem" class="btn btn-success">Buy</button>
-        <button :disabled="noQuantity" @click="sellItem" class="btn btn-success">Sell</button>
+        <button :disabled="noFunds" @click="buyItem" class="btn btn-success">{{noFunds ? 'Not enough money' : 'Buy'}}</button>
+        <button :disabled="noQuantity" @click="sellItem" class="btn btn-success">{{noQuantity ? "You don't own any" : 'Sell'}}</button>
         </div>
       </div>
     </div>
@@ -59,7 +59,10 @@ export default {
 
       if(quantity > this.item.stock) {
         alert("You can't oversell your stock...");
-      } else {
+      } else if(quantity == 0 ) {
+        alert("You cannot sell 0 items...")
+      }
+      else {
 
         if(Number.isInteger(quantity))
         {
