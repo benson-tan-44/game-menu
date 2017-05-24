@@ -1,6 +1,7 @@
 # Game Menu
 
-> This is a project that features a video-game menu
+> This is a project that features a video-game menu.
+It uses Vuex for state management and also features routing & resources.
 
 ## Build Setup
 
